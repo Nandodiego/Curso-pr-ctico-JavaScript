@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-primary: lavender;
+    --bg-button: #afeddc;
+    --bg-input: lavender;
+    --bg-hover-button: #99e5eb;
+    --primary-color: black;
+    --color-button: #296142;
+    --border: 1px solid grey;
+    --box-shadow: 0px 0px 10px;
+    --box-shadow-hover-button: 0px 0px 4px;
+    --primary-font: monospace;
+}
+
+.header__h1{
+    text-align: center;
+    padding: 10px;
+    font-size: -webkit-xxx-large;
+    font-family: monospace;
+    background: var(--bg-primary);
+    color: var(--primary-color);
+}
+
+.header__p{
+    padding: 10px;
+    font-size: 25px;
+    font-family: var(--primary-font);
+    margin-top: 15px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 15px;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
+
+.section__h2{
+    font-size: 22px;
+    font-family: var(--primary-font);
+    margin-bottom: 15px;
+}
+
+.section__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label{
+    font-size: 15px;
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+}
+
+.form__input{
+    width: 80px;
+    padding: 2px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+    border: var(--border);
+    border-radius: 5px;
+    font-family: var(--primary-font);
+    font-size: 15px;
+}
+
+.form-input{
+    width: 80px;
+    padding: 2px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+    border: var(--border);
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+    background: var(--bg-input);
+}
+
+.form__input::placeholder{
+    text-align: center;
+}
+
+.form__button{
+    margin-bottom: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: var(--color-button);
+    background: var(--bg-button);
+    cursor: pointer;
+}
+ 
+.form__button:hover{
+    background: var(--bg-hover-button);
+}
+
+.form__button:active{
+    width: 99%;
+    box-shadow: var(--box-shadow-hover-button);
+}
+
+.form__p{
+    font-size: 15px;
+    font-family: var(--primary-font);
+    padding: 5px;
+}
+
+.footer{
+    padding: 10px;
+    margin-top: 185px;
+}
+
+.footer__text{
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--primary-font);
+}
+
+@media(max-width: 800px){
+    .header__h1{
+        font-size: 28px;
+    }
+    
+    .header__p{
+        font-size: 20px;
+    }
+}

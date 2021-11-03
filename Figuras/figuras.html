@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas | Curso práctico de JavaScript</title>
+    <link rel="stylesheet" href="Css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Figuras geométricas</h1>
+        <p class="header__p">Este es el primer taller del curso práctico de JavaScript.</p>
+    </header>
+    <main class="main">
+        <section class="main__section">
+            <h2 class="section__h2">Cuadrado</h2>
+            <form class="section__form">
+               <label class="form__label" for="inputCuadrado">Escribe cuánto mide cada lado de tu cuadrado:</label>
+               <input class="form__input" id="inputCuadrado" type="number" placeholder="Lados"/>
+               <button class="form__button" type="button" onclick="calcularPerimetroCuadrado()">
+                   Calcular el perímetro
+               </button>
+               <button class="form__button" type="button" onclick="calcularAreaCuadrado()">
+                   Calcular el área
+               </button>
+               <p id="parrafoAMostrar"></p>
+            </form>
+       </section>
+       <section class="main__section">
+           <h2 class="section__h2">Triángulo</h2>
+            <form class="section__form">
+                <label class="form__label" for="inputTriangulo1">Escribe cuánto mide cada lado de tu Triángulo:</label>
+                <input class="form__input" id="inputTriangulo1" type="number" placeholder="Lado1">
+                <input class="form__input" id="inputTriangulo2" type="number" placeholder="Lado2">
+                <input class="form__input" id="inputBaseTriangulo" type="number" placeholder="Base">
+                <button class="form-button2" type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular el perímetro
+                </button>
+                <button class="form__button" type="button" onclick="calcularAreaTriangulo()">
+                    Calcular el área
+                </button>
+               <p id="parrafoAMostrar2"></p>
+            </form>
+       </section>
+       <section class="main__section">
+            <h2 class="section__h2">Círculo</h2>
+            <form class="section__form">
+                <label class="form__label" for="inputCirculo">Cuánto mide el radio de tu círculo:</label>
+                <input class="form__input" id="inputCirculo" type="number" placeholder="Radio">
+                <button class="form-button3" type="button" onclick="calcularDiametroCirculo()">
+                    Calcular el diámetro
+                </button>
+                <button class="form__button" type="button" onclick="calcularPerimetroCirculo()">
+                    Calcular el perímetro
+                </button>
+                <button class="form__button" type="button" onclick="calcularAreaCirculo()">
+                    Calcular el área
+                </button>
+               <p id="parrafoAMostrar3"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">Desarrollado por: Diego Leyton</p>
+    </footer>
+    <script src="JS/figuras.js"></script>
+</body>
+</html>

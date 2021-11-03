@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/inversiones.css">
+    <title>Investment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__div">
+            <img class="div__image" src="Assets/Logo de inversiones.jpg" alt="Investment image">
+            <p class="div__text-header">Investments</p>
+        </div>
+    </header>
+    <section class="section">
+        <main class="section__main">
+            <div class="main__div-tittle">
+                <p class="div-tittle__text">Know your investment</p>
+            </div>
+            <form class="main__form">
+                <div class="form__group-divs">
+                    <div class="group-divs__div">
+                        <div class="div__container">
+                            <label class="form__label" for="inputInvestmentAmount">¿What's the investment amount?</label>
+                            <input class="form__input" id="inputInvestmentAmount" type="number">
+                        </div>
+                        <div class="div__container">
+                            <label class="form__label" for="inputLapseOfTime">¿What's the time lapse in years?</label>
+                            <input class="form__input" id="inputLapseOfTime" type="number">
+                        </div>
+                    </div>
+                    <div class="group-divs__div2">
+                        <div class="div__container">
+                            <label class="form__label" for="inputAnnualInterest">¿What's the annual interest (on %)?</label>
+                            <input class="form__input" id="inputAnnualInterest" type="number">
+                        </div>
+                        <div class="div__container">
+                            <label class="form__label" for="inputTypeOfInterest">¿What kind of interest?</label>
+                            <select class="form__input" name="inputTypeOfInterest" id="inputTypeOfInterest">
+                                <option value="simple">Simple</option>
+                                <option value="Compound">Compound</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__div-buttons">
+                    <button type="button" class="div-buttons__button" onclick="showInvestmentAmount()">Calculate</button>
+                    <button type="button" class="div-buttons__button2" onclick="reset()">Reset</button>
+                </div>
+            </form>
+            <div class="main__div__answer">
+                <p class="div__answer-text" id="resultTextInvestment">Final investment</p>
+            </div>
+        </main>
+    </section>
+    <footer class="footer">
+        <p class="footer__text">Developed by: Diego Leyton</p>
+    </footer>
+    <script src="JS/inversiones.js"></script>
+</body>
+</html>
